@@ -1,0 +1,1 @@
+sudo docker run -p 80:80 -d --rm -v /data/container/apache/config/extra/httpd-vhosts.conf:/usr/local/apache2/conf/extra/httpd-vhosts.conf -v /data/container/apache/config/httpd.conf:/usr/local/apache2/conf/httpd.conf --name httpd-loadbalancer httpd:latest
